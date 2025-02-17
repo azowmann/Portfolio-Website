@@ -41,10 +41,10 @@ const About = ({isDarkMode}) => {
             whileInView={{opacity: 1,}}
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
-                <p className='mb-10 max-w-2xl font-Ovo'>I am an experience Frontend Developer with over a decade of professional
-                    expertise in the field. Throughout my career, I have had the privilege of
-                    collaborating  with prestigious organizations, contributing to their
-                    success and growth.
+                <p className='mb-10 max-w-2xl font-Ovo'>I am a third year student with experience in software
+                    development. I currently enjoy most working with ML, hence the most common libraries I use
+                    include scikit-learn, and PyTorch. Outside of academics, I enjoy going to the gym, playing
+                    poker, and learning new languages.
                 </p>
 
                 <motion.ul 

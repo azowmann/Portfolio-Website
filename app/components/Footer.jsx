@@ -20,6 +20,7 @@ const Footer = ({isDarkMode}) => {
         <li><a target='_blank' href="https://github.com/azowmann">Github</a></li>
         <li><a target='_blank' href="https://www.linkedin.com/in/alan-zhou-893481246/">LinkedIn</a></li>
         <li><a target='_blank' href="https://instagram.com/alan.zhou_34">Instagram</a></li>
+        <li><a target='_blank' href="https://www.tiktok.com/@alan72713?_t=ZM-8u0G1vbiGuc&_r=1">TikTok</a></li>
       </ul>
     </div>
 

@@ -41,7 +41,7 @@ const Experience = () => {
               <motion.div 
               whileHover={{scale: 1.05}}
               key={index}
-              className='border bprder-gray-400 rounded-lg px-8 py-12
+              className='border border-gray-400 rounded-lg px-8 py-12
               hover:shadow-black cursor-pointer hover:bg-lightHover
               hover:-translate-y-1 duration-500 dark:hover:bg-darkHover:dark:hover:shadow-white'>
                   <Image src={icon} alt='' className='w-10'/>

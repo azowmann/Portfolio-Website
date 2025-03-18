@@ -84,26 +84,30 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'My Portfolio',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+      title: 'My Portfolio',
+      description: 'Web Design',
+      bgImage: '/work-1.png',
+      link: 'https://www.google.ca/maps', // Add the link here
     },
     {
-        title: 'Celestial Classifier',
-        description: 'Machine Learning',
-        bgImage: '/work-2.png',
+      title: 'Celestial Classifier',
+      description: 'Machine Learning',
+      bgImage: '/work-2.png',
+      link: 'https://www.google.ca/maps', // Add the link here
     },
     {
-        title: 'Amazon Review Insights',
-        description: 'Natural Language Processing',
-        bgImage: '/work-3.png',
+      title: 'Amazon Review Insights',
+      description: 'Natural Language Processing',
+      bgImage: '/work-3.png',
+      link: 'https://www.google.ca/maps', // Add the link here
     },
     {
-        title: 'One Bad Apple',
-        description: 'Image Recognition',
-        bgImage: '/work-4.png',
+      title: 'One Bad Apple',
+      description: 'Image Recognition',
+      bgImage: '/work-4.png',
+      link: 'https://www.google.ca/maps', // Add the link here
     },
-]
+  ];
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Prompt Engineer', description: 'Optimizing Prompts for experimentation in LLMs for Outlier AI', link: '' },

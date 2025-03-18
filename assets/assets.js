@@ -87,13 +87,13 @@ export const workData = [
       title: 'My Portfolio',
       description: 'Web Design',
       bgImage: '/work-1.png',
-      link: 'https://www.google.ca/maps', // Add the link here
+      link: 'https://github.com/azowmann/Portfolio-Website', // Add the link here
     },
     {
       title: 'Celestial Classifier',
       description: 'Machine Learning',
       bgImage: '/work-2.png',
-      link: 'https://www.google.ca/maps', // Add the link here
+      link: 'https://github.com/kennyzhao-code/Exoplanet-Habitability-Classifier', // Add the link here
     },
     {
       title: 'Amazon Review Insights',
@@ -105,7 +105,7 @@ export const workData = [
       title: 'One Bad Apple',
       description: 'Image Recognition',
       bgImage: '/work-4.png',
-      link: 'https://www.google.ca/maps', // Add the link here
+      link: 'https://github.com/ValueAchooMatthew/OneBadApple', // Add the link here
     },
   ];
 

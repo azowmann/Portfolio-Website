@@ -3,27 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
 import { useState } from 'react'
-
-const Modal = ({ isOpen, onClose, content }) => {
-  if (!isOpen || !content ) return null;
-  return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6 w-full max-w-xl relative">
-        <button
-          onClick={onClose}
-          className="absolute top-2 right-3 text-2xl text-gray-700 dark:text-white hover:text-black"
-        >
-          &times;
-        </button>
-        <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">{content.title}</h3>
-        {content.modalContent?.images?.map((src, idx) => (
-          <Image key={idx} src={src} alt={`modal-img-${idx}`} className="rounded mb-4" />
-        ))}
-        <p className="text-gray-700 dark:text-white/90">{content.modalContent?.text}</p>
-      </div>
-    </div>
-  );
-};
+import Modal from './Modal';
 
 const Experience = () => {
   const [ modalOpen, setModalOpen ] = useState(false);

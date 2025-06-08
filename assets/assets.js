@@ -118,19 +118,19 @@ export const workData = [
   ];
 
 export const serviceData = [
-    {icon: assets.datavisor_logo, title: 'QA Engineer', description: 'Contributing to automation testing for DataVisor', link: '', modalContent: {
+    {icon: assets.datavisor_logo, title: 'QA Engineer', description: 'Contributing to automation testing for DataVisor', link: '#', modalContent: {
       images: [assets.datavisor_logo],
       text: 'asdfadsfadsfadsfasdfdsadsfdsafasdf'
     } },
-    { icon: assets.outlier_logo, title: 'Prompt Engineer', description: 'Optimizing Prompts for experimentation in LLMs for Outlier AI', link: '', modalContent: {
+    { icon: assets.outlier_logo, title: 'Prompt Engineer', description: 'Optimizing Prompts for experimentation in LLMs for Outlier AI', link: '#', modalContent: {
       images: [assets.datavisor_logo],
       text: 'asdfadsfadsfadsfasdfdsadsfdsafasdf'
     } },
-    { icon: assets.ace_of_spades, title: 'Poker Player', description: 'Amateur poker fanatic/player implenting GTO making $15000 over one summer', link: '', modalContent: {
+    { icon: assets.ace_of_spades, title: 'Poker Player', description: 'Amateur poker fanatic/player implenting GTO making $15000 over one summer', link: '#', modalContent: {
       images: [assets.datavisor_logo],
       text: 'asdfadsfadsfadsfasdfdsadsfdsafasdf'
     } },
-    { icon: assets.spirit_of_math, title: 'Assistant Teacher', description: 'Assisted and taught high performing student (grades 1-11) at Spirit of Math Schools', link: '', modalContent: {
+    { icon: assets.spirit_of_math, title: 'Assistant Teacher', description: 'Assisted and taught high performing student (grades 1-11) at Spirit of Math Schools', link: '#', modalContent: {
       images: [assets.datavisor_logo],
       text: 'asdfadsfadsfadsfasdfdsadsfdsafasdf'
     }},

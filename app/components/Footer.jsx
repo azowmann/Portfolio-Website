@@ -15,7 +15,7 @@ const Footer = ({isDarkMode}) => {
 
     <div className='text-center sm:flex items-center justify-between border-t
     border-gray-400 mx-[10%] mt-12 py-6'>
-      <p>© 2025 Alan Zhou. All rights reserved.</p>
+      <p>© June 2025 Alan Zhou. All rights reserved.</p>
       <ul className='flex items-center gap-10 justify-center mt-4sm:mt-0'>
         <li><a target='_blank' href="https://github.com/azowmann">Github</a></li>
         <li><a target='_blank' href="https://www.linkedin.com/in/alan-zhou-893481246/">LinkedIn</a></li>

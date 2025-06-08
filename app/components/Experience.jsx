@@ -28,7 +28,7 @@ const Experience = () => {
         whileInView={{ opacity: 1 }}
         transition={{ delay:0.7, duration: 0.5 }}
         className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-          I am currently a Prompt Engineer doing remote work for Outlier AI. Below are
+          I am currently a Quality Assurance Engineer working remotely for DataVisor. Below are
           some of my other work experiences and passions.
         </motion.p>
 

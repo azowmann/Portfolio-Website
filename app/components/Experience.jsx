@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 import { useState } from 'react'
 import Modal from './Modal';
 
-const Experience = () => {
+const Experience = ({isDarkMode}) => {
   const [ modalOpen, setModalOpen ] = useState(false);
   const [ selectedCard, setSelectedCard] = useState(null);
 

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -24,7 +25,7 @@ export default function Modal({ isOpen, onClose, content }) {
           variants={backdropVariants}
         >
           <motion.div
-            className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 max-w-lg w-full relative"
+            className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-w-3xl w-full max-h-[90vh] overflow-y-auto relative"
             variants={modalVariants}
             initial="hidden"
             animate="visible"
@@ -32,18 +33,26 @@ export default function Modal({ isOpen, onClose, content }) {
           >
             <button
               onClick={onClose}
-              className="absolute top-2 right-3 text-gray-600 dark:text-white hover:text-black text-xl"
+              className="absolute top-2 right-3 text-gray-600 dark:text-white hover:text-black text-2xl"
             >
               &times;
             </button>
-            <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
               {content.title}
             </h2>
-            {content.images?.map((src, idx) => (
-              <img key={idx} src={src} alt={`modal-img-${idx}`} className="mb-4 rounded" />
+            {content.modalContent?.images?.map((imgSrc, idx) => (
+              <div key={idx} className="mb-4 rounded overflow-hidden">
+                <Image
+                  src={imgSrc}
+                  alt={`modal-img-${idx}`}
+                  width={200}
+                  height={200}
+                  className="rounded object-contain max-w-full h-auto"
+                />
+              </div>
             ))}
             <p className="text-gray-700 dark:text-white/90">
-              {content.text}
+              {content.modalContent?.text}
             </p>
           </motion.div>
         </motion.div>

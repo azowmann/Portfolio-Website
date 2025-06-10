@@ -124,7 +124,7 @@ export const serviceData = [
     } },
     { icon: assets.outlier_logo, title: 'Prompt Engineer', description: 'Optimizing Prompts for experimentation in LLMs for Outlier AI', link: '#', modalContent: {
       images: [assets.outlier_logo],
-      text: "Scene 7 of Tennessee Williams A Streetcar Named Desire describes the contrasting views on Blanches life from Stanley, and Blanche herself. Throughout this passage, Blanche sings a sweet song in the bathroom, while Stanley convinces Stella why her sister is not as innocent as other characters perceive her to be. As Stanley continues to argue his perspective, Stella remains in denial but the truth becomes more clear towards the end of the scene. In this passage, Williams explores the theme of illusion versus reality through the use of symbolism, structure, and tone. By juxtaposing illusion and reality, Williams uses these literary devices to demonstrate the effect of it on relationship"
+      text: ""
     } },
     { icon: assets.ace_of_spades, title: 'Poker Player', description: 'Amateur poker fanatic/player implenting GTO making $15000 over one summer', link: '#', modalContent: {
       images: [assets.ace_of_spades],

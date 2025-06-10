@@ -120,7 +120,7 @@ export const workData = [
 export const serviceData = [
     {icon: assets.datavisor_logo, title: 'QA Engineer', description: 'Contributing to automation testing for DataVisor', link: '#', modalContent: {
       images: [assets.datavisor_logo],
-      text: "Scene 7 of Tennessee Williams A Streetcar Named Desire describes the contrasting views on Blanches life from Stanley, and Blanche herself. Throughout this passage, Blanche sings a sweet song in the bathroom, while Stanley convinces Stella why her sister is not as innocent as other characters perceive her to be. As Stanley continues to argue his perspective, Stella remains in denial but the truth becomes more clear towards the end of the scene. In this passage, Williams explores the theme of illusion versus reality through the use of symbolism, structure, and tone. By juxtaposing illusion and reality, Williams uses these literary devices to demonstrate the effect of it on relationship"
+      text: "I am currently a Quality Assurance Engineer at DataVisor as an intern."
     } },
     { icon: assets.outlier_logo, title: 'Prompt Engineer', description: 'Optimizing Prompts for experimentation in LLMs for Outlier AI', link: '#', modalContent: {
       images: [assets.outlier_logo],
@@ -132,7 +132,7 @@ export const serviceData = [
     } },
     { icon: assets.spirit_of_math, title: 'Assistant Teacher', description: 'Assisted and taught high performing student (grades 1-11) at Spirit of Math Schools', link: '#', modalContent: {
       images: [assets.spirit_of_math],
-      text: "Scene 7 of Tennessee Williams A Streetcar Named Desire describes the contrasting views on Blanches life from Stanley, and Blanche herself. Throughout this passage, Blanche sings a sweet song in the bathroom, while Stanley convinces Stella why her sister is not as innocent as other characters perceive her to be. As Stanley continues to argue his perspective, Stella remains in denial but the truth becomes more clear towards the end of the scene. In this passage, Williams explores the theme of illusion versus reality through the use of symbolism, structure, and tone. By juxtaposing illusion and reality, Williams uses these literary devices to demonstrate the effect of it on relationship"
+      text: "Acting as an Assistant Teacher at Spirit of Math Schools was my first ever job at 15. One of my most cherished opportunities I have ever received, as I’m grateful for the chance to work in an educating environment. My experience lasting from 2019-2022 will be one that is forever remembered."
     }},
 ]
 

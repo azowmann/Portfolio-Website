@@ -49,7 +49,7 @@ const Footer = ({ isDarkMode }) => {
 
         {/* Copyright */}
         <p className='text-xs text-gray-400 dark:text-gray-600'>
-          © 2025 Alan Zhou
+          © 2026 Alan Zhou
         </p>
       </div>
     </footer>

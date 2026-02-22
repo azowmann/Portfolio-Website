@@ -1,61 +1,137 @@
-import { assets, serviceData } from '@/assets/assets'
-import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
 
+// ─── FILL IN YOUR JOB DATA HERE ───────────────────────────────────────────────
+const experienceData = [
+  {
+    role: 'Software Developer',
+    company: 'RBC Borealis',
+    period: 'Jan 2026 - Present',
+    location: 'Toronto, ON',
+    type: 'Internship',
+    bullets: [
+      'Build automation tools and validation pipelines to support enterprise data systems.',
+      'Develop internal testing frameworks and CI/CD workflows for production applications.',
+    ],
+    tags: ['MCPs', 'CI/CD Pipelines', 'Data Validation'],
+  },
+  {
+    role: 'Software Engineer',
+    company: 'DataVisor',
+    period: 'Jun 2025 — Aug 2025',
+    location: 'Remote — Mountain View, CA',
+    type: 'Internship',
+    bullets: [
+      'Created automated UI and API tests to improve software reliability.',
+      'Collaborated with cross-functional teams to support product quality and delivery.',
+    ],
+    tags: ['Automation', 'UI/UX', 'Java'],
+  },
+  {
+    role: 'Lead Assistant Teacher',
+    company: 'Spirit of Math Schools',
+    period: 'Aug 2019 — Jun 2022',
+    location: 'Mississauga, ON',
+    type: 'Part-time',
+    bullets: [
+      'Mentored students and supported individualized learning.',
+      'Trained staff and fostered a collaborative learning environment.',
+    ],
+    tags: ['Team Leadership', 'Communication', 'Teamwork'],
+  },
+]
+// ──────────────────────────────────────────────────────────────────────────────
+
 const Experience = () => {
   return (
-    <motion.div 
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 1 }}
-    id="experience" className='w-full px-[12%] py-10 scroll-mt-20'>
-        <motion.h4 
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay:0.3, duration: 0.5 }}
-        className='text-center mb-2 text-lg font-Ovo'>
-          What I offer</motion.h4>
-        <motion.h2 
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay:0.3, duration: 0.5 }}
-        className='text-center text-5xl font-Ovo'>
-          My Experience</motion.h2>
+    <motion.div
+      id='experience'
+      className='w-full px-[12%] py-24 scroll-mt-20'
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
+      {/* Section Label */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className='flex items-center gap-3 justify-center mb-4'
+      >
+        <span className='h-px w-12 bg-gray-900 dark:bg-white' />
+        <span className='text-xl uppercase tracking-[0.2em] text-gray-900 dark:text-white font-medium'>
+          Experience
+        </span>
+        <span className='h-px w-12 bg-gray-900 dark:bg-white' />
+      </motion.div>
 
-        <motion.p 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay:0.7, duration: 0.5 }}
-        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-          I am currently a Prompt Engineer doing remote work for Outlier AI. Below are
-          some of my other work experiences and passions.
-        </motion.p>
+      {/* Timeline */}
+      <div className='relative max-w-3xl mx-auto'>
 
-        <motion.div 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay:0.9, duration: 0.6 }}
-        className='grid grid-cols-auto gap-6 my-10'>
-            {serviceData.map(({icon, title, description, link}, index)=>(
-              <motion.div 
-              whileHover={{scale: 1.05}}
+        {/* Vertical line */}
+        <div className='absolute left-0 top-2 bottom-2 w-px bg-gray-200 dark:bg-gray-700' />
+
+        <div className='flex flex-col gap-0'>
+          {experienceData.map((job, index) => (
+            <motion.div
               key={index}
-              className='border bprder-gray-400 rounded-lg px-8 py-12
-              hover:shadow-black cursor-pointer hover:bg-lightHover
-              hover:-translate-y-1 duration-500 dark:hover:bg-darkHover:dark:hover:shadow-white'>
-                  <Image src={icon} alt='' className='w-10'/>
-                  <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{title}</h3>
-                  <p className='text-sm text-gray-600 leading-5 dark:text-white/80'> 
-                      {description}
-                  </p>
-                  <a href={link} className='flex items-center gap-2 text-sm mt-5'>
-                      Read more <Image src={assets.right_arrow} alt='' className='w-4' />
-                  </a>
-              </motion.div>
-            ))}
-        </motion.div>
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.12 }}
+              className='relative pl-10 pb-14 group'
+            >
+              {/* Timeline dot */}
+              <div className='absolute left-0 top-2 -translate-x-1/2 w-2.5 h-2.5 rounded-full
+                bg-white dark:bg-gray-900 border-2 border-gray-400 dark:border-gray-500
+                group-hover:border-gray-800 dark:group-hover:border-white transition-colors duration-300' />
 
+              {/* Header row */}
+              <div className='flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3'>
+                <div>
+                  <h3 className='text-base font-semibold text-gray-900 dark:text-white leading-snug'>
+                    {job.role}
+                  </h3>
+                  <p className='text-sm text-gray-500 dark:text-gray-400'>
+                    {job.company} &nbsp;·&nbsp; {job.location}
+                  </p>
+                </div>
+                <div className='flex flex-col sm:items-end gap-1 flex-shrink-0'>
+                  <span className='text-xs text-gray-400 dark:text-gray-500 tabular-nums'>
+                    {job.period}
+                  </span>
+                  <span className='text-xs px-2 py-0.5 rounded-full border border-gray-200
+                    dark:border-gray-700 text-gray-500 dark:text-gray-400 w-fit'>
+                    {job.type}
+                  </span>
+                </div>
+              </div>
+
+              {/* Bullet points */}
+              <ul className='mb-4 space-y-1.5'>
+                {job.bullets.map((point, i) => (
+                  <li key={i} className='flex items-start gap-2 text-sm text-gray-600 dark:text-gray-300'>
+                    <span className='mt-2 w-1 h-1 rounded-full bg-gray-400 dark:bg-gray-500 flex-shrink-0' />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Tags */}
+              <div className='flex flex-wrap gap-2'>
+                {job.tags.map((tag, i) => (
+                  <span
+                    key={i}
+                    className='text-xs px-2.5 py-1 bg-gray-100 dark:bg-white/[0.06]
+                      text-gray-600 dark:text-gray-400 rounded-md'
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
     </motion.div>
   )
 }

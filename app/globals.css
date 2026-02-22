@@ -5,3 +5,16 @@
 *{
   font-family: Outfit;
 }
+
+html {
+  font-size: 120%;
+}
+
+html.dark {
+  background-color: #1a1a1a;
+}
+
+html.dark body {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}

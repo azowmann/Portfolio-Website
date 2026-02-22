@@ -15,14 +15,14 @@ const projectsData = [
     description: 'An interactive app that visualizes live stock performance to make market trends clear and accessible.',
     tags: ['Python', 'Streamlit', 'Data Visualization'],
     link: 'https://github.com/azowmann',
-    year: '2024',
+    year: '2025',
   },
   {
     title: 'Celestial Classifier',
     description: 'A neural network that predicts exoplanet habitability from planetary and stellar data to guide future space exploration.',
     tags: ['PyTorch', 'Scikit-learn', 'Neural Networks', 'Machine Learning'],
     link: 'https://github.com/kennyzhao-code/Celestial-Classifier',
-    year: '2023',
+    year: '2024',
   },
 ]
 // ──────────────────────────────────────────────────────────────────────────────

@@ -37,6 +37,7 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import alan_portrait from './alan-portrait.png';
 import alan_logo from './alan-logo.png';
+import alan_logo_white from './alan-logo-white.png';
 import alan_headshot from './alan-headshot.png';
 
 export const assets = {
@@ -79,6 +80,7 @@ export const assets = {
     right_arrow_bold_dark,
     alan_portrait,
     alan_logo,
+    alan_logo_white,
     alan_headshot
 };
 

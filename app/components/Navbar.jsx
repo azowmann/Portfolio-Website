@@ -43,11 +43,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       >
         {/* Logo */}
         <a href='#top'>
-          <Image
-            src={assets.alan_logo}
-            alt='Alan Zhou'
-            className='w-24 cursor-pointer'
-          />
+            <Image
+                src={isDarkMode ? assets.alan_logo_white : assets.alan_logo}
+                alt='Alan Zhou'
+                className='w-24 cursor-pointer'
+            />
         </a>
 
         {/* Desktop nav links */}

@@ -3,14 +3,9 @@ import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
-import git from './git.png';
-import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
-import logo from './logo.png';
-import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import profile_img from './profile-img.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -42,14 +37,9 @@ export const assets = {
     edu_icon,
     edu_icon_dark,
     project_icon,
-    git,
-    mongodb,
     right_arrow_white,
-    logo,
-    logo_dark,
     mail_icon,
     mail_icon_dark,
-    profile_img,
     download_icon,
     hand_icon,
     header_bg_color,

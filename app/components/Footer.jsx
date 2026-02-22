@@ -26,7 +26,7 @@ const Footer = ({ isDarkMode }) => {
               alt=''
               className='w-3.5'
             />
-            alanzhou531@gmail.com
+            alan.zhou431@gmail.com
           </span>
         </div>
 

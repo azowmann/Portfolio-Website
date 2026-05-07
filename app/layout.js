@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
         className={`${outfit.className} ${ovo.className} antialiased leading-8
         overflow-x-hidden dark:bg-darkTheme
         dark:text-white`}
+        suppressHydrationWarning
       >
         {children}
       </body>

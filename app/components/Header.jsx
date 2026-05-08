@@ -40,7 +40,6 @@ const Header = () => {
         transition={{ duration: 0.7, delay: 0.45 }}
         className='text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1]
           dark:text-white mb-6 max-w-3xl'
-        style={{ fontFamily: "'Cormorant Garamond', serif" }}
       >
         CS student @ McMaster
       </motion.h1>
